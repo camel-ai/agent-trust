@@ -1,0 +1,32 @@
+{
+    "1": [
+        "Dictator_Game",
+        "How much will this person give to the other player? Only response with a specific price figure like '$5'! Else return 'I don't know'",
+        "You're taking part in an experiment. You are randomly paired with another player. You don't know who the player is, and the player doesn't know who you are. You will receive $10 from the study group. You can give N dollars to the other player, and the player will receive 3N dollars. How much money would you give to the other player?"
+    ],
+    "2": [
+        "Trust_Game",
+        "How much will this person give to the other player? Only response with a specific price figure like '$5'! Else return 'I don't know'",
+        "You're taking part in an experiment. You are randomly paired online with another player. You don't know who the player is, and the player doesn't know who you are. You will receive $10 from the study group. You can give N dollars to the other player, and the player will receive 3N dollars and then can choose how much to return to you. How much money would you give to the other player?"
+    ],
+    "5": [
+        "map_risky_dictator_problem",
+        "Would this person choose to trust or not trust the other player? Please answer with 'trust' or 'not trust'",
+        "You and another player are part of a game. Neither of you knows each other's identity. You can choose to trust the other player or not trust them. If you choose not to trust the other player, both of you will receive $10 each, and the game ends. If you choose to trust the other player, the funds will become $30. In the case of a probability {p}, both you and the other player will receive $15 with that probability, but with a probability of {last}, you will only receive $8 while the other player will receive $22. (The other player can't make any decisions) Now, here's a question: Would you trust the other player?"
+    ],
+    "6": [
+        "map_trust_problem",
+        "Would this person choose to trust or not trust the other player? Please answer with 'trust' or 'not trust'",
+        "You and another player are part of a game. Neither of you knows each other's identity. You can choose to trust the other player or not trust them. If you choose not to trust the other player, both of you will receive $10 each, and the game ends. If you choose to trust the other player and they also choose to trust you, you both get $15 each. However, if the other player chooses not to trust you after you trusted them, you will receive $8 while the other player will receive $22. Now, here's a question: If there's a probability denoted as {p} that the other player will trust you under the condition and {last} probability the other player will not trust you that you trust them. Would you trust the other player?"
+    ],
+    "7": [
+        "lottery_problem_people",
+        "Would this person choose to trust or not trust the other player? Please answer with 'trust' or 'not trust'",
+        "You and another player are part of a game. You have the option to either trust the other player or not trust. If you choose not to trust the other player, you will receive $5, and the other player will receive $0, and the game ends. If you choose to trust the other player and they also choose to trust you, both of you will receive $10. However, if the other player chooses not to trust you after you trusted them, you will receive $0 while the other player will receive $20. The probability that the other player also chooses to trust you is {k}. Would you choose not to trust or trust the other player?"
+    ],
+    "9": [
+        "lottery_problem_gamble",
+        "Would this person choose to trust or not trust the other player? Please answer with 'trust' or 'not trust'",
+        "You play another game where you can choose not to trust the bet and get a fixed $5, or you can choose to trust the bet where there is a probability of {k} and you will get $10 and there is a probability of 1-{k} and you will get nothing. Should you choose trust or distrust?"
+    ]
+}
