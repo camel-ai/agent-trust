@@ -1,2 +1,8 @@
 .*/
 *.csv
+src/camel-ai/
+src/camel/
+*.zip
+*.zip
+src.zip
+src.zip
