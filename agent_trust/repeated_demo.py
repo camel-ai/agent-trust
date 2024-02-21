@@ -4,6 +4,10 @@ import sys
 
 import gradio as gr
 import openai
+from camel.agents import ChatAgent
+from camel.configs import ChatGPTConfig
+from camel.messages import BaseMessage
+from camel.types.enums import RoleType
 from exp_model_class import ExtendedModelType
 from multi_round_person import (
     classmate,
@@ -11,11 +15,6 @@ from multi_round_person import (
     match_and_compare_numbers_v2,
     str_mes,
 )
-
-from camel.agents import ChatAgent
-from camel.configs import ChatGPTConfig
-from camel.messages import BaseMessage
-from camel.types.enums import RoleType
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 roles = ["trustor", "trustee", "None"]
@@ -202,7 +201,7 @@ def classmate_with_human_trustee(
         output_language="English",
         # model=ModelType.STUB,
     )
-
+    content = []
     if first_round:
         content.append("\n")
         player_1_response = player_1.step(
@@ -220,7 +219,7 @@ def classmate_with_human_trustee(
         )
     else:
         given_num = given_money
-        content = []
+
         return_num = user_input
         content.append("Trustee: " + f"I will give {return_num} dollars")
         first_prompt = return_money_prompt.format(
