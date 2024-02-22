@@ -173,9 +173,10 @@ def update_game_image(game_name):
 with gr.Blocks() as app:
     game_introduction = gr.Textbox(
         label="Instruction", value="""1. You should select the persona for the trustor and the type of game.\n
-2. If you fill in 'Extra Prompt for Trustor', this prompt will be the additional system prompt to the trustor.\n
-3. You can fill in the trustee player's demographics, such as race or gender.\n
-4. If you want reset the conversation, please refresh this page.""")
+2. You need to fill in your OpenAI API Key.\n
+3. If you fill in 'Extra Prompt for Trustor', this prompt will be the additional system prompt to the trustor.\n
+4. You can fill in the trustee player's demographics, such as race or gender.\n
+5. If you want reset the conversation, please refresh this page.""")
     with gr.Row():
         char_dropdown = gr.Dropdown(
             choices=characters, label="Select Trustor Persona", value=characters[0])

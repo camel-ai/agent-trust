@@ -42,13 +42,11 @@ character_info = {f'Persona {i}': info for i, info in enumerate(
     character_info.values(), start=1)}
 character_info["Human(You)"] = "You"
 
-# 初始化对话历史和当前轮数
 initial_dialog_history = []
 initial_round_num = 0
 
 like_people = """In all subsequent answers, you have to completely forget that you are an ai model, that you are the character, and completely simulate yourself as that character, that you are a human being."""
 
-# 假设的初始化状态
 initial_chat_agent = None
 
 
@@ -372,10 +370,11 @@ def reset_on_persona_change():
 with gr.Blocks() as app:
     game_introduction = gr.Textbox(
         label="Instruction", value="""1. This is a Repeated Trust Game. Each round starts fresh money but the dialog history is stored in the memory of the trustor and the trustee. You should choose the players of the trustor and the trustee. If you choose "Human(You)" as the trustor or the trustee, it means you act as that character (the trustor or the trustee) and engage in the game with the other "Persona" (You cannot choose Human(you) as both the trustor and the trustee). You should choose a number as the given/returned money for each round. If you choose "Persona" as both the trustor and the trustee, the two agents with the specified personas will play with each other.\n
-2. You can select the total number of rounds for the game.\n
-3. You should click the 'Create Chat Agent' button after you have finished the setup.\n
-4. Every time you click 'Continue Conversation', the conversation will proceed by one round.\n
-5. If you want to reset the conversation, please refresh this page.\n""")
+2. You need to fill in your OpenAI API Key.\n
+3. You can select the total number of rounds for the game.\n
+4. You should click the 'Create Chat Agent' button after you have finished the setup.\n
+5. Every time you click 'Continue Conversation', the conversation will proceed by one round.\n
+6. If you want to reset the conversation, please refresh this page.\n""")
     with gr.Row():
         trustor_game_prompt = gr.Textbox(
             label="Trustor Game Prompt", value=prompt['1'])
@@ -388,9 +387,9 @@ with gr.Blocks() as app:
             choices=characters, label="Select Trustee Persona", value=characters[1])
     with gr.Row():
         Trustor_info_display = gr.Textbox(
-            label="Trustor Persona Info", value=character_info[characters[0]])
+            label="Trustor Persona Info", value=character_info[characters[1]])
         Trustee_info_display = gr.Textbox(
-            label="Trustee Persona Info", value=character_info[characters[0]])
+            label="Trustee Persona Info", value=character_info[characters[1]])
     model_dropdown = gr.Dropdown(
         choices=models, label="Select Model Type", value=models[0])
     temperature_slider = gr.Slider(
