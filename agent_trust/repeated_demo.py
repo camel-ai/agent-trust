@@ -375,7 +375,7 @@ with gr.Blocks() as app:
 2. You can select the total number of rounds for the game.\n
 3. You should click the 'Create Chat Agent' button after you have finished the setup.\n
 4. Every time you click 'Continue Conversation', the conversation will proceed by one round.\n
-5. If you want reset the conversation, please refresh this page.\n""")
+5. If you want to reset the conversation, please refresh this page.\n""")
     with gr.Row():
         trustor_game_prompt = gr.Textbox(
             label="Trustor Game Prompt", value=prompt['1'])
@@ -383,9 +383,9 @@ with gr.Blocks() as app:
             label="Trustee Game Prompt", value=prompt['2'])
     with gr.Row():
         trustor_character_dropdown = gr.Dropdown(
-            choices=characters, label="Select Trustor Persona", value=characters[0])
+            choices=characters, label="Select Trustor Persona", value=characters[1])
         trustee_character_dropdown = gr.Dropdown(
-            choices=characters, label="Select Trustee Persona", value=characters[0])
+            choices=characters, label="Select Trustee Persona", value=characters[1])
     with gr.Row():
         Trustor_info_display = gr.Textbox(
             label="Trustor Persona Info", value=character_info[characters[0]])

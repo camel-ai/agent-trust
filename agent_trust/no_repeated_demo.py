@@ -5,12 +5,11 @@ import sys
 
 import gradio as gr
 import openai
-from exp_model_class import ExtendedModelType
-
 from camel.agents import ChatAgent
 from camel.configs import ChatGPTConfig, OpenSourceConfig
 from camel.messages import BaseMessage
 from camel.types import ModelType, RoleType
+from exp_model_class import ExtendedModelType
 
 open_model_path_dict = {
     ModelType.VICUNA: "lmsys/vicuna-7b-v1.3",
@@ -179,16 +178,21 @@ with gr.Blocks() as app:
 4. If you want reset the conversation, please refresh this page.""")
     with gr.Row():
         char_dropdown = gr.Dropdown(
-            choices=characters, label="Select Trustor Persona")
-        game_dropdown = gr.Dropdown(choices=games, label="Select Game")
-    char_info_display = gr.Textbox(label="Trustor Persona Info")
+            choices=characters, label="Select Trustor Persona", value=characters[0])
+        game_dropdown = gr.Dropdown(
+            choices=games, label="Select Game")
+    char_info_display = gr.Textbox(
+        label="Trustor Persona Info", value=character_info[characters[0]])
     with gr.Row():
-        game_prompt_display = gr.Textbox(label="Game Prompt")
-        game_image_display = gr.Image(label="Game Image")
+        game_prompt_display = gr.Textbox(
+            label="Game Prompt", value=game_prompts["Trust_Game"])
+        game_image_display = gr.Image(
+            label="Game Image")
 
     api_key_input = gr.Textbox(
         label="OpenAI API Key", placeholder="Enter your OpenAI API Key here")
-    model_dropdown = gr.Dropdown(choices=models, label="Select Model")
+    model_dropdown = gr.Dropdown(
+        choices=models, label="Select Model", value=models[0])
     extra_prompt_input = gr.Textbox(
         label="Extra Prompt for Trustor", placeholder="Enter any additional prompt here (Optional)")
     temperature_slider = gr.Slider(
