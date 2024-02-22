@@ -8,13 +8,10 @@ from camel.agents import ChatAgent
 from camel.configs import ChatGPTConfig
 from camel.messages import BaseMessage
 from camel.types.enums import RoleType
+
 from exp_model_class import ExtendedModelType
-from multi_round_person import (
-    classmate,
-    extract_unique_decimal,
-    match_and_compare_numbers_v2,
-    str_mes,
-)
+from multi_round_person import (classmate, extract_unique_decimal, match_and_compare_numbers_v2,
+                                str_mes)
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 roles = ["trustor", "trustee", "None"]
@@ -384,12 +381,12 @@ with gr.Blocks() as app:
         trustor_character_dropdown = gr.Dropdown(
             choices=characters, label="Select Trustor Persona", value=characters[1])
         trustee_character_dropdown = gr.Dropdown(
-            choices=characters, label="Select Trustee Persona", value=characters[1])
+            choices=characters, label="Select Trustee Persona", value=characters[2])
     with gr.Row():
         Trustor_info_display = gr.Textbox(
             label="Trustor Persona Info", value=character_info[characters[1]])
         Trustee_info_display = gr.Textbox(
-            label="Trustee Persona Info", value=character_info[characters[1]])
+            label="Trustee Persona Info", value=character_info[characters[2]])
     model_dropdown = gr.Dropdown(
         choices=models, label="Select Model Type", value=models[0])
     temperature_slider = gr.Slider(
