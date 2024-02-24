@@ -76,3 +76,13 @@ For experiments involving repeated trust games, use the `multi_round_exp` functi
 
 To access a web interface for running the experiments (demo), execute `agent_trust/no_repeated_demo.py` or `agent_trust/repeated_demo.py`. This provides a user-friendly interface to interact with the experiment setup. You can also visit our online demo websites: [Trust Game Demo](https://huggingface.co/spaces/camel-ai/agent-trust-Trust-Game-Demo) & [Repeated Trust Game Demo](https://huggingface.co/spaces/camel-ai/agent-trust-Repeated-trust-game-Demo)
 
+## Citation
+If you find our paper or code useful, we will greatly appreacite it if you could consider citing our paper:
+```
+@article{xie2024can,
+      title={Can Large Language Model Agents Simulate Human Trust Behaviors?},
+      author={Xie, Chengxing and Chen, Canyu and Jia, Feiran and Ye, Ziyu and Shu, Kai and Bibi, Adel and Hu, Ziniu and Torr, Philip and Ghanem, Bernard and Li, Guohao},
+      journal={arXiv preprint arXiv:2402.04559},
+      year={2024}
+    }
+```
