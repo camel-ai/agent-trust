@@ -10,6 +10,11 @@
 
 Our research investigates the simulation of human trust behaviors through the use of large language model agents. We leverage the foundational work of the Camel Project, acknowledging its significant contributions to our research. For further information about the Camel Project, please visit [Camel AI](https://github.com/camel-ai/camel).
 
+
+## Experiment Results
+
+All the experiment results are recorded for verification. The prompts for games in the paper are stored in `agent_trust/prompt`. The experiment results for non-repeated games are stored in `agent_trust/No repeated res`. The experiment results for repeated games are stored in `agent_trust/repeated res`.
+
 ## Setting Up the Experiment Environment
 
 To prepare the environment for conducting experiments, follow these steps using Conda:
