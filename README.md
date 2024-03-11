@@ -11,8 +11,11 @@
 
 Our research investigates the simulation of human trust behaviors through the use of large language model agents. We leverage the foundational work of the Camel Project, acknowledging its significant contributions to our research. For further information about the Camel Project, please visit [Camel AI](https://github.com/camel-ai/camel).
 
+## Framework
+
+<b>Our Framework for Investigating Agent Trust as well as its Behavioral Alignment with Human Trust.</b> First, this figure shows the major components for studying the trust behaviors of LLM agents with Trust Games and  Belief-Desire-Intention (BDI) modeling. Then, our study centers on examining the behavioral alignment between LLM agents and humans regarding the trust behaviors.
 <div align=center><img src="./image/framework.png" width="90%"/></div>
-<figcaption><i><b>Our Framework for Investigating Agent Trust as well as its Behavioral Alignment with Human Trust.</b> First, this figure shows the major components for studying the trust behaviors of LLM agents with Trust Games and  Belief-Desire-Intention (BDI) modeling. Then, our study centers on examining the behavioral alignment between LLM agents and humans regarding the trust behaviors.</i></figcaption>
+
 
 ## Experiment Results
 
