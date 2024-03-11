@@ -10,6 +10,7 @@
 
 Our research investigates the simulation of human trust behaviors through the use of large language model agents. We leverage the foundational work of the Camel Project, acknowledging its significant contributions to our research. For further information about the Camel Project, please visit [Camel AI](https://github.com/camel-ai/camel).
 
+<div align=center><img src="./image/framework.png" width="90%"/></div>
 
 ## Experiment Results
 
