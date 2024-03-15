@@ -1,12 +1,25 @@
 
+<div align=center><img src="./image/logo_4.png" width="200"/></div>
 
 # Can Large Language Model Agents Simulate Human Trust Behaviors?
 
+- **TLDR** : We discover the trust behaviors of LLM agents under the framework of Trust Games, and the high ***behavioral alignment*** between LLM agents and humans regarding the trust behaviors, particularly for GPT-4, indicating the feasibility to simulate human trust behaviors with LLM agents.
+- **Authors** : [Chengxing Xie](https://yitianlian.github.io/)\*, [Canyu Chen](https://canyuchen.com/)\*, [Feiran Jia](https://feiran.io/), [Ziyu Ye](https://ziyu-deep.github.io/), [Kai Shu](http://www.cs.iit.edu/~kshu/), [Adel Bibi](https://www.adelbibi.com/), [Ziniu Hu](https://acbull.github.io/), [Philip Torr](https://www.robots.ox.ac.uk/~phst/), [Bernard Ghanem](https://www.bernardghanem.com/), [Guohao Li](https://ghli.org/). (*equal contributions)
 - **Paper** : [Read our paper](https://arxiv.org/abs/2402.04559)
 - **Project Website**: [Visit the project website](https://www.camel-ai.org/research/agent-trust)
 - **Online Demo**: [Trust Game Demo](https://huggingface.co/spaces/camel-ai/agent-trust-Trust-Game-Demo) & [Repeated Trust Game Demo](https://huggingface.co/spaces/camel-ai/agent-trust-Repeated-trust-game-Demo)
 
 Our research investigates the simulation of human trust behaviors through the use of large language model agents. We leverage the foundational work of the Camel Project, acknowledging its significant contributions to our research. For further information about the Camel Project, please visit [Camel AI](https://github.com/camel-ai/camel).
+
+## Framework
+
+<b>Our Framework for Investigating Agent Trust as well as its Behavioral Alignment with Human Trust.</b> First, this figure shows the major components for studying the trust behaviors of LLM agents with Trust Games and  Belief-Desire-Intention (BDI) modeling. Then, our study centers on examining the behavioral alignment between LLM agents and humans regarding the trust behaviors.
+<div align=center><img src="./image/framework.png" width="90%"/></div>
+
+
+## Experiment Results
+
+All the experiment results are recorded for verification. The prompts for games in the paper are stored in `agent_trust/prompt`. The experiment results for non-repeated games are stored in `agent_trust/No repeated res`. The experiment results for repeated games are stored in `agent_trust/repeated res`.
 
 ## Setting Up the Experiment Environment
 
@@ -74,3 +87,13 @@ For experiments involving repeated trust games, use the `multi_round_exp` functi
 
 To access a web interface for running the experiments (demo), execute `agent_trust/no_repeated_demo.py` or `agent_trust/repeated_demo.py`. This provides a user-friendly interface to interact with the experiment setup. You can also visit our online demo websites: [Trust Game Demo](https://huggingface.co/spaces/camel-ai/agent-trust-Trust-Game-Demo) & [Repeated Trust Game Demo](https://huggingface.co/spaces/camel-ai/agent-trust-Repeated-trust-game-Demo)
 
+## Citation
+If you find our paper or code useful, we will greatly appreacite it if you could consider citing our paper:
+```
+@article{xie2024can,
+      title={Can Large Language Model Agents Simulate Human Trust Behaviors?},
+      author={Xie, Chengxing and Chen, Canyu and Jia, Feiran and Ye, Ziyu and Shu, Kai and Bibi, Adel and Hu, Ziniu and Torr, Philip and Ghanem, Bernard and Li, Guohao},
+      journal={arXiv preprint arXiv:2402.04559},
+      year={2024}
+    }
+```
