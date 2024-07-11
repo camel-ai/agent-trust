@@ -8,7 +8,7 @@
 - **Correspondence to**: Chengxing Xie <<xiechengxing34@gmail.com>>,
 Canyu Chen <<cchen151@hawk.iit.edu>>, Guohao Li <<guohao@robots.ox.ac.uk>>.
 - **Paper** : [Read our paper](https://arxiv.org/abs/2402.04559)
-- **Project Website**: [Visit the project website](https://www.camel-ai.org/research/agent-trust)
+- **Project Website**: [Visit the project website](http://agent-trust.camel-ai.org/)
 - **Online Demo**: [Trust Game Demo](https://huggingface.co/spaces/camel-ai/agent-trust-Trust-Game-Demo) & [Repeated Trust Game Demo](https://huggingface.co/spaces/camel-ai/agent-trust-Repeated-trust-game-Demo)
 
 Our research investigates the simulation of human trust behaviors through the use of large language model agents. We leverage the foundational work of the Camel Project, acknowledging its significant contributions to our research. For further information about the Camel Project, please visit [Camel AI](https://github.com/camel-ai/camel).
