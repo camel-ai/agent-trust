@@ -1,5 +1,5 @@
 
-<div align=center><img src="./image/logo_4.png" width="200"/></div>
+<div align=center><img src="./image/agent-trust-logo-tertiary.png" width="200"/></div>
 
 # Can Large Language Model Agents Simulate Human Trust Behavior?
 
