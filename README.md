@@ -6,7 +6,7 @@
 - **TLDR** : We discover that LLM agents generally exhibit trust behavior in Trust Games and GPT-4 agents manifest high ***behavioral alignment*** with humans in terms of trust behavior, indicating the potential to simulate human trust behavior with LLM agents.
 - **Authors** : [Chengxing Xie](https://yitianlian.github.io/)\*, [Canyu Chen](https://canyuchen.com/)\*, [Feiran Jia](https://feiran.io/), [Ziyu Ye](https://ziyu-deep.github.io/), [Shiyang Lai](https://scholar.google.com/citations?user=qALDmfcAAAAJ&hl=en), [Kai Shu](http://www.cs.iit.edu/~kshu/), [Jindong Gu](https://jindonggu.github.io/), [Adel Bibi](https://www.adelbibi.com/), [Ziniu Hu](https://acbull.github.io/), [David Jurgens](http://jurgens.people.si.umich.edu/), [James Evans](https://macss.uchicago.edu/directory/James-Evans), [Philip Torr](https://www.robots.ox.ac.uk/~phst/), [Bernard Ghanem](https://www.bernardghanem.com/), [Guohao Li](https://ghli.org/). (*equal contributions)
 - **Correspondence to**: Chengxing Xie <<xiechengxing34@gmail.com>>,
-Canyu Chen <<cchen151@hawk.iit.edu>>, Guohao Li <<guohao@robots.ox.ac.uk>>.
+Canyu Chen <<cchen151@hawk.iit.edu>>, Guohao Li <<guohao.li@eigent.ai>>.
 - **Paper** : [Read our paper](https://arxiv.org/abs/2402.04559)
 - **Project Website**: [https://agent-trust.camel-ai.org](https://agent-trust.camel-ai.org)
 - **Online Demo**: [Trust Game Demo](https://huggingface.co/spaces/camel-ai/agent-trust-Trust-Game-Demo) & [Repeated Trust Game Demo](https://huggingface.co/spaces/camel-ai/agent-trust-Repeated-trust-game-Demo)
