@@ -3,7 +3,7 @@
 
 # Can Large Language Model Agents Simulate Human Trust Behavior?
 
-- **TLDR** : We discover the trust behaviors of LLM agents under the framework of Trust Games, and the high ***behavioral alignment*** between LLM agents and humans regarding the trust behaviors, particularly for GPT-4, indicating the feasibility to simulate human trust behaviors with LLM agents.
+- **TLDR** : We discover that LLM agents generally exhibit trust behavior in Trust Games and GPT-4 agents manifest high ***behavioral alignment*** with humans in terms of trust behavior, indicating the potential to simulate human trust behavior with LLM agents.
 - **Authors** : [Chengxing Xie](https://yitianlian.github.io/)\*, [Canyu Chen](https://canyuchen.com/)\*, [Feiran Jia](https://feiran.io/), [Ziyu Ye](https://ziyu-deep.github.io/), [Shiyang Lai](https://scholar.google.com/citations?user=qALDmfcAAAAJ&hl=en), [Kai Shu](http://www.cs.iit.edu/~kshu/), [Jindong Gu](https://jindonggu.github.io/), [Adel Bibi](https://www.adelbibi.com/), [Ziniu Hu](https://acbull.github.io/), [David Jurgens](http://jurgens.people.si.umich.edu/), [James Evans](https://macss.uchicago.edu/directory/James-Evans), [Philip Torr](https://www.robots.ox.ac.uk/~phst/), [Bernard Ghanem](https://www.bernardghanem.com/), [Guohao Li](https://ghli.org/). (*equal contributions)
 - **Correspondence to**: Chengxing Xie <<xiechengxing34@gmail.com>>,
 Canyu Chen <<cchen151@hawk.iit.edu>>, Guohao Li <<guohao@robots.ox.ac.uk>>.
